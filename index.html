@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Turbo Tax Reviews</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '8038c0fbc1e30bb63bd04ffc3d2e1081bc26a7b5';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
+<meta name="google-site-verification" content="IbfrsTgEAGOK5lM3VFOrgNpNvgYrp-MFYb5cGfWQEHI" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="https://1000logos.net/wp-content/uploads/2023/04/TurboTax-logo.png" alt="TurboTax Logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Join Our Team</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Software and Licenses</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- MAIN -->
+<section class="main-container">
+
+    <!-- CENTER FORM -->
+    <div class="center-box">
+        <div class="form-box">
+
+            <div class="top-icon">
+                <img src="https://i0.wp.com/blog.turbotax.intuit.com/wp-content/uploads/2022/10/image.png?resize=256%2C256&ssl=1">
+            </div>
+
+            <h2>Download TurboTax Software</h2>
+            <p>Fill in your details to continue</p>
+
+            <div>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input id="name" type="text" placeholder="Full Name">
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input id="email" type="email" placeholder="Email Address">
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-phone"></i>
+                    <input id="phone" type="tel" placeholder="Phone Number">
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-key"></i>
+                    <input id="license" type="text" placeholder="License Key">
+                </div>
+
+                <button id="downloadBtn" class="btn">Download</button>
+            </div>
+
+            <p id="message"></p>
+
+        </div>
+    </div>
+
+    <!-- RIGHT SIDEBAR IMAGE -->
+    <div class="right-sidebar">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrLnzku2YAxGtNPfMp_LFQV1qGC_1PGbphx1342UOxJrCFKfIv38ohJyQ5smIKdJvdv-YwPT6TktYO3DTbtKlxz4h9qfQL74mhrbbARaVhl3t2TNYlx7JzoIAsngsw7hpgqUBd08y_ZL6KLRqnezgXfJcgUtGucavluwEneOeiqJkI1BSID-eQY6qwLQ/s1536/turdox.png" alt="TurboTax Software">
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <ul>
+            <li><a href="#">About Turbotax</a></li>
+            <li><a href="#">Join Our Team</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Software and Licenses</a></li>
+            <li><a href="#">Affiliates and Partners</a></li>
+            <li><a href="#">Accessibility</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+const btn = document.getElementById("downloadBtn");
+const message = document.getElementById("message");
+
+btn.addEventListener("click", function () {
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const license = document.getElementById("license").value.trim();
+
+    if (!name || !email || !phone || !license) {
+        message.style.color = "red";
+        message.innerHTML = "All fields are required.";
+        return;
+    }
+
+    btn.disabled = true;
+
+    message.style.color = "green";
+    message.innerHTML = "Preparing your download... Please wait 5 seconds.";
+
+setTimeout(() => {
+    message.style.color = "red";
+    message.innerHTML = `
+        <h3 style="margin: 0 0 10px; font-size: 18px;">Error Code - TurboTax Error Code 1001</h3>
+        <p style="margin: 0 0 10px; font-size: 16px;">Download could not be initiated due to a technical issue.</p>
+        <p style="margin: 0; font-size: 16px;">Please <a href="https://your-live-chat-link.com" target="_blank" style="color: #0c0ced; text-decoration: underline;">connect with Live Chat</a> for immediate assistance.</p>
+    `;
+    btn.disabled = false;
+}, 5000);
+
+});
+</script>
+
+</body>
+</html>

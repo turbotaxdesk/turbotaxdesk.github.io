@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #0077c5;
+    padding: 15px 30px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo img {
+    height: 60px;
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN LAYOUT */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    min-height: 80vh;
+    background: #f5f7fa;
+    padding: 20px;
+}
+
+/* CENTER FORM */
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORM BOX */
+.form-box {
+    background: #fff;
+    padding: 40px;
+    width: 360px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* TOP ICON */
+.top-icon img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.form-box h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.form-box p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* INPUT FIELDS */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #888;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 38px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #0077c5;
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #e11d48;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #be123c;
+}
+
+/* RIGHT SIDEBAR IMAGE */
+.right-sidebar img {
+    width: 700px;
+    border-radius: 378px;
+}
+
+/* MESSAGE */
+#message {
+    margin-top: 15px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+/* FOOTER (ENHANCED SIZE) */
+footer {
+    background: #222;
+    padding: 50px 20px;   /* Increased height */
+}
+
+/* Footer Container */
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer Title */
+.footer-container::before {
+    content: "TurboTax Resources";
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Footer Links */
+.footer-container ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Footer Text */
+.footer-container ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Hover */
+.footer-container ul li a:hover {
+    color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .right-sidebar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-sidebar img {
+        width: 200px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
