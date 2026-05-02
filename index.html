@@ -1,173 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TurboTax Features</title>
-    <meta name="description" content="Informational website about TurboTax features, setup, and usage.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Turbo Tax Reviews</title>
 
-    <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #0077c5;
+    padding: 15px 30px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    min-height: 80vh;
+    background: #f5f7fa;
+    padding: 20px;
+}
+
+.form-box {
+    background: #fff;
+    padding: 40px;
+    width: 360px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.top-icon img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 38px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #e11d48;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #be123c;
+}
+
+.right-sidebar img {
+    width: 600px;
+    border-radius: 20px;
+}
+
+footer {
+    background: #222;
+    padding: 40px;
+    text-align: center;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
     }
 
-    body {
-        background: #0b1220;
-        color: #e2e8f0;
-        line-height: 1.6;
+    .right-sidebar img {
+        width: 250px;
     }
+}
+</style>
 
-    .container {
-        width: 90%;
-        max-width: 1000px;
-        margin: auto;
-    }
+<!-- Smartsupp -->
+<script>
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '8038c0fbc1e30bb63bd04ffc3d2e1081bc26a7b5';
+</script>
+<script async src="https://www.smartsuppchat.com/loader.js"></script>
 
-    header {
-        background: #111827;
-        padding: 30px 0;
-        text-align: center;
-        border-bottom: 1px solid #1f2937;
-    }
-
-    header h1 {
-        color: #38bdf8;
-    }
-
-    header p {
-        color: #94a3b8;
-        margin-top: 8px;
-    }
-
-    .hero {
-        padding: 60px 0;
-        text-align: center;
-        background: linear-gradient(135deg, #1e293b, #0b1220);
-    }
-
-    .hero h2 {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-
-    .hero p {
-        max-width: 800px;
-        margin: auto;
-        color: #94a3b8;
-    }
-
-    .section {
-        padding: 50px 0;
-    }
-
-    .box {
-        background: #111827;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        border: 1px solid #1f2937;
-        transition: 0.3s;
-    }
-
-    .box:hover {
-        transform: translateY(-5px);
-        border-color: #38bdf8;
-    }
-
-    .box h3 {
-        color: #38bdf8;
-        margin-bottom: 10px;
-    }
-
-    .box p {
-        color: #cbd5e1;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background: #111827;
-        color: #94a3b8;
-        border-top: 1px solid #1f2937;
-    }
-    </style>
 </head>
+
 <body>
 
 <header>
-    <div class="container">
-        <h1>TurboTax Information Guide</h1>
-        <p>Explore features, setup, and account access information</p>
+    <div class="header-container">
+        <div class="logo">
+            <img src="https://1000logos.net/wp-content/uploads/2023/04/TurboTax-logo.png">
+        </div>
     </div>
 </header>
 
-<section class="hero">
-    <div class="container">
-        <h2>TurboTax Features Overview</h2>
-        <p>
-            This page provides general information about TurboTax features,
-            including setup, account access, and basic usage guidance.
-        </p>
+<section class="main-container">
+
+    <div class="form-box">
+        <div class="top-icon">
+            <img src="https://i0.wp.com/blog.turbotax.intuit.com/wp-content/uploads/2022/10/image.png?resize=256%2C256&ssl=1">
+        </div>
+
+        <h2>Download TurboTax Software</h2>
+
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input id="name" type="text" placeholder="Full Name">
+        </div>
+
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input id="email" type="email" placeholder="Email">
+        </div>
+
+        <div class="input-group">
+            <i class="fas fa-phone"></i>
+            <input id="phone" type="tel" placeholder="Phone">
+        </div>
+
+        <div class="input-group">
+            <i class="fas fa-key"></i>
+            <input id="license" type="text" placeholder="License Key">
+        </div>
+
+        <button id="downloadBtn" class="btn">Download</button>
+        <p id="message"></p>
     </div>
-</section>
 
-<section class="section">
-    <div class="container">
-
-        <div class="box">
-            <h3>Easy Setup</h3>
-            <p>
-                TurboTax provides a simple installation process with step-by-step guidance
-                to get started quickly on supported devices.
-            </p>
-        </div>
-
-        <div class="box">
-            <h3>Secure Account Access</h3>
-            <p>
-                Access account details anytime with secure login options and protected user data.
-            </p>
-        </div>
-
-        <div class="box">
-            <h3>User-Friendly Interface</h3>
-            <p>
-                A clean and guided interface helps users navigate features without confusion.
-            </p>
-        </div>
-
-        <div class="box">
-            <h3>Cloud Access</h3>
-            <p>
-                Information can be accessed across devices with cloud-based availability.
-            </p>
-        </div>
-
-        <div class="box">
-            <h3>Step-by-Step Guidance</h3>
-            <p>
-                Built-in prompts and guidance help users complete tasks easily.
-            </p>
-        </div>
-
-        <div class="box">
-            <h3>Regular Updates</h3>
-            <p>
-                Software updates ensure improved performance and compatibility with latest systems.
-            </p>
-        </div>
-
+    <div class="right-sidebar">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrLnzku2YAxGtNPfMp_LFQV1qGC_1PGbphx1342UOxJrCFKfIv38ohJyQ5smIKdJvdv-YwPT6TktYO3DTbtKlxz4h9qfQL74mhrbbARaVhl3t2TNYlx7JzoIAsngsw7hpgqUBd08y_ZL6KLRqnezgXfJcgUtGucavluwEneOeiqJkI1BSID-eQY6qwLQ/s1536/turdox.png">
     </div>
+
 </section>
 
 <footer>
-    <div class="container">
-        <p>© 2026 TurboTax Guide | Informational Use Only</p>
-    </div>
+    <p>© 2026 TurboTax Help Guide</p>
 </footer>
+
+<script>
+const btn = document.getElementById("downloadBtn");
+const message = document.getElementById("message");
+
+btn.onclick = function () {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const license = document.getElementById("license").value.trim();
+
+    if (!name || !email || !phone || !license) {
+        message.style.color = "red";
+        message.innerText = "All fields required";
+        return;
+    }
+
+    message.style.color = "green";
+    message.innerText = "Preparing download...";
+
+    setTimeout(() => {
+        message.innerHTML = "Download failed. Please contact support.";
+    }, 4000);
+};
+</script>
 
 </body>
 </html>
